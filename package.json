@@ -1,0 +1,26 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require ts-node/register **/*spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ylepner/codewars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ylepner/codewars/issues"
+  },
+  "homepage": "https://github.com/ylepner/codewars#readme",
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "ts-node": "^10.8.0"
+  }
+}
