@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { highAndLow } from './highest-and-lowest'
 
-describe('Highest and Lowest, https://www.codewars.com/kata/highest-and-lowest', () => {
+describe('Highest and Lowest, 7kyu, https://www.codewars.com/kata/highest-and-lowest', () => {
   it('should return same number if one number string', () => {
     const result = highAndLow('123');
     expect(result).to.be.eq('123 123');
