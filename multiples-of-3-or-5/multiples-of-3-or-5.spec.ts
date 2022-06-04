@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { solution } from './multiples-of-3-or-5';
 
 describe('Multiples of 3 or 5, 6kyu, https://www.codewars.com/kata/multiples-of-3-or-5', () => {
-  it('should return 0 if  if the number is negative', () => {
+  it('should return 0 if the number is negative', () => {
     const result = solution(-1);
     expect(result).to.be.eq(0);
   });
