@@ -7,7 +7,7 @@ describe('Isograms, 7kyu, https://www.codewars.com/kata/54ba84be607a92aa900000f1
     expect(result).to.be.true;
   })
   it('should return true if word has no repeating letters', () => {
-    const result = isIsogram('isogram');
+    const result = isIsogram('Dermatoglyphics');
     expect(result).to.be.true;
   })
   it('should return false if word has repeating consecutive letters', () => {
