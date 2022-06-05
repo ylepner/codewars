@@ -15,7 +15,7 @@ describe('Sorting by bits, 6kyu, https://www.codewars.com/kata/sorting-by-bits',
     expect(result).to.deep.eq([0, 2, 2, 4, 8, 8, 3, 5, 5, 6, 9, 7, 56]);
   });
   it('should return the same arr', () => {
-    const arr = []
+    const arr = [1]
     const result = sortByBit(arr);
     expect(result).to.deep.eq(arr);
   });
