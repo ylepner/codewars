@@ -1,5 +1,5 @@
 export function isIsogram(str: string): boolean {
-  let lettersCounter = {}
+  let lettersCounter: Record<string, number> = {}
   for (let letter of str) {
     if (lettersCounter[letter.toLowerCase()]) {
       return false

@@ -3,7 +3,7 @@ export function duplicateEncode(word: string): string {
     return '('
   }
   word = word.toLowerCase()
-  let charCounter = {}
+  let charCounter: Record<string, number> = {}
   for (let character of word) {
     if (charCounter[character]) {
       charCounter[character] += 1
