@@ -1,9 +1,7 @@
-import { expect } from 'chai';
-import { calculate } from './javascript-mathematician.spec';
-
-// describe('Javascript Mathematician, 7kyu, https://www.codewars.com/kata/javascript-mathematician', () => {
-//   it(`'tail' should return all elements of array except first`, () => {
-//     const result = calculate([1, 2, 3, 4, 5]);
-//     expect(result).to.deep.eq([2, 3, 4, 5]);
-//   });
-// })
+export function calculate(...args1: number[]) {
+  let result = args1.reduce((a, b) => a + b)
+  return function (...args2: number[]) {
+    result += args2.reduce((a, b) => a + b)
+    return result
+  }
+}
