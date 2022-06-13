@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { formatDuration } from './human-readable-duration-format';
 
-describe('Human readable duration format, 7kyu, https://www.codewars.com/kata/human-readable-duration-format', () => {
+describe('Human readable duration format, 4kyu, https://www.codewars.com/kata/human-readable-duration-format', () => {
   it(`should return 'now' if the amount of seconds is 0`, () => {
     const result = formatDuration(0);
     expect(result).to.be.eq('now');
