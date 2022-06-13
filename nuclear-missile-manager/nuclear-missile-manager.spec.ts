@@ -12,7 +12,7 @@ describe('Nuclear Missile Manager, 6kyu, https://www.codewars.com/kata/nuclear-m
     const start = performance.now();
     await new Promise(resolve => setTimeout(resolve, 600));
     expect(arr.length).to.be.eq(5);
-    const epsilonMs = 15;
+    const epsilonMs = 16;
     for (let i = 0; i < 5; i++) {
       expect(arr[i].t).to.approximately(i * 100, epsilonMs);
       expect(arr[i].rocketNumber).to.be.eq(i);
