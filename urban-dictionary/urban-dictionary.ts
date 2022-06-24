@@ -1,6 +1,6 @@
 interface WordDictionary {
   addWord(): void,
-  search(): void
+  search(): boolean
 }
 
 const WordDictionary: any = function () {
