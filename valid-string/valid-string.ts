@@ -1,24 +1,11 @@
 export function validWord(dictionary: string[], word: string): boolean {
-  for (let str of dictionary) {
-    if (word.includes(str)) {
-      let restString = word.split(str).join('')
-      if (restString === '') {
-        return true
-      }
-      if (restString === word) {
-        return false
-      }
-    }
+  if (word === '') {
+    return true;
   }
-  return true
+  return dictionary.some(str => {
+    if (word.startsWith(str)) {
+      return validWord(dictionary, word.slice(str.length));
+    }
+    return false;
+  });
 }
-
-// export function validWord(dictionary: string[], word: string): boolean {
-//   if (word === '') {
-//     return true;
-//   }
-//   return dictionary.some(key => {
-//     if (!word.startsWith(key)) return false;
-//     return validWord(dictionary, word.slice(key.length));
-//   });
-// }
