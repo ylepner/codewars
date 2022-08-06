@@ -14,4 +14,8 @@ describe(`Pascal's Diagonals, 5kyu, https://www.codewars.com/kata/576b072359b116
     const result = generateDiagonal(3, 7)
     expect(result).to.be.deep.eq([1, 4, 10, 20, 35, 56, 84]);
   });
+  it('Case 4', () => {
+    const result = generateDiagonal(100, 6)
+    expect(result).to.be.deep.eq([1, 101, 5151, 176851, 4598126, 96560646]);
+  });
 })
