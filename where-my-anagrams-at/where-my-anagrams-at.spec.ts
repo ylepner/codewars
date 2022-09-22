@@ -16,6 +16,6 @@ describe('Where my anagrams at?, 5kyu, https://www.codewars.com/kata/523a86aa423
   });
   it('case 4', () => {
     const result = anagrams('abba', ['aabb', 'abab', 'abbaa', 'abbab', 'abbba', 'abcd', 'baaab', 'baab', 'baba', 'babaa', 'bbaa'])
-    expect(result).to.deep.eq(['aabb', 'bbaa']);
+    expect(result).to.deep.eq(['aabb', 'abab', 'baab', 'baba', 'bbaa']);
   });
 })

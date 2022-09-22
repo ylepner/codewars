@@ -1,3 +1,5 @@
+import { Context } from "mocha"
+
 export function anagrams(word: string, words: string[]): string[] {
   const letters: Record<string, number> = {}
   let result: string[] = []
@@ -11,11 +13,10 @@ export function anagrams(word: string, words: string[]): string[] {
   for (let word of words) {
     const copyLetters = { ...letters }
     for (let letter of word) {
-      if (copyLetters[letter]) {
-        if (copyLetters[letter] > 0) {
-          copyLetters[letter] -= 1
-        }
-      } else {
+      if (copyLetters[letter] !== undefined) {
+        copyLetters[letter] -= 1
+      }
+      else {
         break
       }
     }
