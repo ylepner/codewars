@@ -10,11 +10,11 @@ describe('SMS-Shortener, 6kyu, https://www.codewars.com/kata/535a69fb36973f2aad0
     const result = shortener('This message is already short enough!');
     expect(result).to.be.eq('This message is already short enough!');
   });
-  it('case 1', () => {
+  it('case 3', () => {
     const result = shortener('ThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoon.');
     expect(result).to.be.eq('ThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoonThereIsNoSpoon');
   });
-  it('case 1', () => {
+  it('case 4', () => {
     const result = shortener('SMS messages are limited to 160 characters. It tends to be irritating, especially when freshly written message is 164 characters long. SMS messages are limited to 160 characters. It tends to be irritating, especially when freshly written message is 164 characters long.');
     expect(result).to.be.eq('SMSMessagesAreLimitedTo160Characters.ItTendsToBeIrritating,EspeciallyWhenFreshlyWrittenMessageIs164CharactersLong.SMSMessagesAreLimitedTo160Characters.ItTendsToBeIrritating,EspeciallyWhenFreshlyWrittenMessageIs164CharactersLong.');
   });
