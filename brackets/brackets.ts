@@ -1,13 +1,20 @@
 export function check(str: string, bracketsConfig: string[][]) {
   let openBrackets: string[] = []
   let closeBrackets: string[] = []
-  let stackArr = []
+  let stackArr: string[] = []
   bracketsConfig.forEach((arr) => {
     openBrackets.push(arr[0]);
     closeBrackets.push(arr[1])
   })
   for (let el of str) {
-    if (openBrackets.includes(el)) {
+    if (openBrackets.includes(el) && closeBrackets.includes(el)) {
+      if (stackArr[stackArr.length - 1] === el) {
+        stackArr.pop()
+      } else {
+        stackArr.push(el)
+      }
+    }
+    else if (openBrackets.includes(el)) {
       stackArr.push(el)
     } else if (closeBrackets.includes(el)) {
       if (stackArr.length === 0) {
@@ -18,7 +25,6 @@ export function check(str: string, bracketsConfig: string[][]) {
       }
     }
   }
-
   if (stackArr.length === 0) {
     return true
   }
