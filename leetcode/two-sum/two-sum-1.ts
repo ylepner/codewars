@@ -9,6 +9,7 @@ export function twoSum1(nums: number[], target: number) {
     }
   }
   return []
+
 }
 
 
