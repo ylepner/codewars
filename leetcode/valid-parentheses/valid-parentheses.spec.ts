@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { isValid } from './valid-parentheses';
 
-describe('Two Sum, Easy, https://leetcode.com/problems/two-sum/', () => {
+describe('Valid Parentheses, Easy, https://leetcode.com/problems/valid-parentheses/', () => {
   it('case 1', () => {
     const result = isValid('()');
     expect(result).to.be.eq(true);

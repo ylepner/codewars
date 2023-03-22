@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { invertTree, TreeNode } from "./invert-binary-tree";
 
-describe('Merge Two Sorted Lists, Easy, https://leetcode.com/problems/merge-two-sorted-lists/', () => {
+describe('Invert Binary Tree, Easy, https://leetcode.com/problems/invert-binary-tree/', () => {
   it('case 1', () => {
     const tree = new TreeNode(2, new TreeNode(1), new TreeNode(3))
     const result = invertTree(tree)
