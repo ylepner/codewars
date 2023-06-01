@@ -1,5 +1,6 @@
-export const solution = (isBadVersion: any) => {
-  return (n: number): number => {
+
+export function solution(isBadVersion: (version: number) => boolean) {
+  return function (n: number): number {
     let left = 1;
     let right = n;
 
@@ -15,4 +16,4 @@ export const solution = (isBadVersion: any) => {
 
     return left;
   };
-};
+}
